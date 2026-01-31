@@ -49,7 +49,7 @@
     <string name="home_learn_apatch">深入了解 FolkPatch</string>
     <string name="home_click_to_learn_apatch">學習有關 FolkPatch 的功能及使用方式</string>
     <string name="settings_hide_apatch_card">隱藏「了解 FolkPatch」卡片</string>
-    <string name="settings_hide_apatch_card_summary">控制首頁是否顯示「了解 FolkPatch」卡片</string>
+    <string name="settings_hide_apatch_card_summary">控制首頁是否顯示「深入了解 FolkPatch」卡片</string>
 
     <string name="send_log">傳送日誌</string>
     <string name="save_log">儲存日誌</string>
@@ -214,7 +214,7 @@
     <string name="settings_folkx_animation_vertical">垂直滑動</string>
     <string name="settings_folkx_animation_diagonal">對角滑動</string>
 
-    <string name="apm_webui_open">開啟網頁介面</string>
+    <string name="apm_webui_open">WebUI</string>
     <string name="apm_action">操作</string>
     <string name="enable_web_debugging">啟用 WebView 偵錯</string>
     <string name="enable_web_debugging_summary">可用於偵錯 WebUI，請僅在需要時啟用。</string>
@@ -223,11 +223,11 @@
     <string name="settings_show_disable_all_modules">顯示「停用所有模組」按鈕</string>
     <string name="settings_show_disable_all_modules_summary">在模組頁面顯示一鍵停用所有模組的按鈕</string>
     <string name="settings_module_sort_optimization">模組卡片排序優化</string>
-    <string name="settings_module_sort_optimization_summary">前置系統模組中帶有 WebUI 和 Action 的模組</string>
+    <string name="settings_module_sort_optimization_summary">前置系統模組中帶有「WebUI」和「操作」的模組</string>
     <string name="settings_fold_system_module">折疊系統模組</string>
     <string name="settings_fold_system_module_summary">點擊模組卡片展開/折疊操作按鈕</string>
         <string name="settings_simple_list_bottom_bar">簡約列表底欄</string>
-        <string name="settings_simple_list_bottom_bar_summary">模組操作使用純圖示按鈕樣式，靈感來自APatch</string>
+        <string name="settings_simple_list_bottom_bar_summary">模組操作去除文字，僅保留圖示按鈕樣式，靈感來自 APatch</string>
     <string name="apm_install_confirm_title">安裝模組</string>
     <string name="apm_install_confirm_content">確定要安裝 %s 嗎？</string>
     <string name="apm_disable_all_title">停用所有系統模組</string>
@@ -242,7 +242,7 @@
     <string name="mode_select_page_patch_and_install">直接安裝（通常選擇此項）</string>
     <string name="mode_select_page_select_file">選取要修補的「boot 映像檔」</string>
     <string name="mode_select_page_install_inactive_slot">安裝至非使用中的插槽 (OTA 後)</string>
-    <string name="mode_select_page_install_inactive_slot_warning">重新啟動後，您的裝置將**強制**啟動到目前非使用中的插槽！
+    <string name="mode_select_page_install_inactive_slot_warning">重新啟動後，您的裝置將**強制**從非使用中的插槽啟動！
 
 注意只能在 OTA 完成後的重啟之前使用。
 
@@ -253,8 +253,8 @@
 以下是驗證失敗的一些可能原因： 
 ⒈ 您尚未使用 KernelPatch 程式修補啟動映像檔。 
 ⒉ 修補後的啟動映像檔未刷入裝置。 
-⒊超級密鑰錯誤。 
-⒋ 您的裝置不支援 APatch 和 KernelPatch。 
+⒊ 超級密鑰錯誤。 
+⒋ 您的裝置不支援 APatch 與 KernelPatch。 
  
 請檢查後再次嘗試。如果仍有問題存在，您隨時可以在官方存放庫的議題頁面上提問。</string>
 
@@ -434,7 +434,7 @@
 
 例如某些用於防止分割區被修改的 KPM 模組，僅能以臨時載入方式使用，若直接嵌入至核心，可能會導致裝置無法開機。若您不希望修改或破壞 Boot 分割區，也可透過此功能快速載入所需模組。
 
-請確保應用程式已完全結束後重新啟動，系統才會執行載入指令。一般情況下，裝置開機時也會自動載入模組。管理器在啟動時短暫黑畫面屬於正常現象，此功能採用純背景載入機制，請於進入後手動下拉重新整理，以確認模組是否已成功載入。</string>
+請確保應用程式已完全結束後重新啟動，系統才會執行載入指令。一般情況下，裝置開機時也會自動載入模組。管理器在啟動時短暫出現黑畫面屬於正常現象，此功能採用純背景載入機制，請於進入後手動下拉重新整理，以確認模組是否已成功載入。</string>
     <string name="kpm_autoload_first_time_confirm">好</string>
     <string name="kpm_autoload_do_not_show_again">不再顯示</string>
 
@@ -464,7 +464,7 @@
     <string name="apm_bulk_install_first_use_text">這個功能允許你一次性安裝多個模組，屬於快速安裝，適合安裝一些過程中未涉及按鍵操作的模組。若要涉及點按音量鍵等操作的模組，請於設定中啟用「完整批次安裝流程」。</string>
     <string name="apm_bulk_install_remove">移除</string>
     <string name="apm_first_use_title">歡迎使用系統模組</string>
-    <string name="apm_first_use_text">歡迎使用系統模組。本功能支援相容 Magisk 生態的模組，未來也可能加入對 Lua 模組的支援。您可以點擊右下角的按鈕安裝模組，或使用頂部的安裝器進行模組批次安裝。此外，FolkPatch 也提供一鍵備份所有模組的功能，但請注意，此方式不一定適用於所有模組，建議仍自行額外備份關鍵模組。</string>
+    <string name="apm_first_use_text">歡迎使用系統模組。本功能與 Magisk 模組相容，未來也可能加入對 Lua 模組的支援。您可以點擊右下角的按鈕安裝模組，或使用頂部的安裝器進行模組批次安裝。此外，FolkPatch 也提供一鍵備份所有模組的功能，但請注意，此方式不一定適用於所有模組，關鍵模組仍建議自行額外備份。</string>
     <!-- Module Backup/Restore Strings -->
     <string name="apm_backup_title">備份模組</string>
     <string name="apm_restore_title">還原模組</string>
@@ -498,16 +498,16 @@
     <string name="backup_dir_open_failed">開啟備份目錄失敗</string>
     <string name="auto_backup_failed">自動備份失敗: %s</string>
     <string name="auto_backup_success">自動備份成功: %s</string>
-    <string name="settings_auto_backup_boot">自動備份Boot</string>
-    <string name="settings_auto_backup_boot_summary">自動將Boot備份到本地儲存 (Downloads/FolkPatch/BootBackups)</string>
+    <string name="settings_auto_backup_boot">自動備份 Boot</string>
+    <string name="settings_auto_backup_boot_summary">自動將 Boot 分割區備份到本地儲存 (Downloads/FolkPatch/BootBackups)</string>
 
     <!-- Auto-added missing strings -->
-    <string name="home_hide_kpatch_version_summary">在資訊卡中隱藏 「KernelPatch版本」</string>
+    <string name="home_hide_kpatch_version_summary">在資訊卡中隱藏 「KernelPatch 版本」</string>
     <string name="home_hide_su_path_summary">在資訊卡中隱藏「可執行 SU 路徑」</string>
     <string name="home_hide_fingerprint_summary">在資訊卡中隱藏「指紋」</string>
     <string name="home_hide_fingerprint">隱藏「指紋」</string>
     <string name="about_source_code"><![CDATA[<p>查看原始碼於 %1$s<p/>加入我們的 %2$s 頻道<p/>加入我們的 %3$s 群組]]></string>
-    <string name="home_hide_kpatch_version">隱藏「KernelPatch版本」</string>
+    <string name="home_hide_kpatch_version">隱藏「KernelPatch 版本」</string>
     <string name="home_hide_su_path">隱藏「可執行 SU 路徑」</string>
     <string name="app_title_magicpatch">MagicPatch</string>
 
