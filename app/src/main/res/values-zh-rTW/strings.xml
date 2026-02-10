@@ -143,11 +143,11 @@
     <string name="kpm">核心模組</string>
     <string name="kpm_kp_not_installed">KernelPatch 尚未安裝</string>
     <string name="kpm_add_kpm">新增 KPM</string>
-    <string name="kpm_load">匯入</string>
+    <string name="kpm_load">載入</string>
     <string name="kpm_install">安裝</string>
     <string name="kpm_embed">嵌入</string>
-    <string name="kpm_load_toast_succ">匯入成功</string>
-    <string name="kpm_load_toast_failed">匯入失敗</string>
+    <string name="kpm_load_toast_succ">載入成功</string>
+    <string name="kpm_load_toast_failed">載入失敗</string>
     <string name="kpm_unload_confirm">解除安裝 \"%s\" 模組？</string>
     <string name="kpm_unload">解除安裝</string>
     <string name="kpm_control">控制</string>
@@ -170,7 +170,7 @@
     <string name="su_batch_exclude_title">批次排除</string>
     <string name="su_batch_exclude_content">為全部非 Root 權限應用程式排除注入，請選擇一個操作</string>
     <string name="su_exclude_btn">排除</string>
-    <string name="su_exclude_reverse_btn">反排除</string>
+    <string name="su_exclude_reverse_btn">反向排除</string>
 
     <!-- 超級使用者應用程式操作對話框 -->
     <string name="su_app_action_title">應用程式操作</string>
@@ -207,7 +207,7 @@
     <string name="apm_mount_warning_message">預設不會掛載模組，請使用內建掛載系統或安裝元模組</string>
     <string name="apm_mount_warning_button">好</string>
     <string name="apm_reboot_to_apply">重新啟動以應用變更</string>
-    <string name="apm_changelog">「更新日誌」</string>
+    <string name="apm_changelog">更新日誌</string>
     <string name="apm_update">更新</string>
     <string name="apm_downloading">正在下載 \"%s\" 模組……</string>
     <string name="apm_start_downloading">開始下載 %s</string>
@@ -294,17 +294,17 @@
 繼續？</string>
 
     <string name="home_dialog_auth_fail_title">驗證失敗</string>
-    <string name="home_dialog_auth_fail_content">無法認證超級密鑰，導致 FolkPatch 激活失敗。
-以下是認證失敗的一些可能原因——請對號入座：
-\n1. 您根本沒使用 KernelPatch 來修補 boot.img，或者忘了自己到底做了啥。
-\n2. 修補完的 boot.img 還躺在電腦裡睡覺，根本沒刷進設備。
-\n3. 超級密鑰輸錯了，或者夾雜了神秘符號，比如來自外星文的字符。
-\n4. 您的設備可能並不兼容 FolkPatch 和 KernelPatch，強行折騰也是徒勞。
-\n5. 您可能搞了一些神秘操作——比如用了某些排除包名的模組把 FolkPatch 給屏蔽了，結果把自己整出局了。
-\n請先好好檢查一遍，再試一次。如果問題依舊，歡迎到官方倉庫的 issue 頁面提問。
-畢竟，有些問題可能純粹是您自己親手造成的！
-祝你好運啊！順帶一提，您點擊下面的文檔按鈕準沒錯！</string>
-
+    <string name="home_dialog_auth_fail_content">無法認證超級密鑰，FolkPatch 認證失敗。
+以下是認證失敗的可能原因：
+\n1. 您未使用 KernelPatch 修補 boot.img，或不確定先前的操作內容。
+\n2. 修補後的 boot.img 尚未刷入裝置。
+\n3. 超級密鑰輸入錯誤，或包含不支援的字元。
+\n4. 您的裝置可能與 FolkPatch 或 KernelPatch 不相容。
+\n5. 您可能使用了某些排除套件名稱的模組，導致 FolkPatch 被排除在外。
+\n請檢查上述項目後再試一次。若問題仍未解決，歡迎至官方儲存庫的 Issue 頁面回報。
+\n點擊下方的說明文檔按鈕可獲得更多協助。
+</string>
+    
     <string name="home_more_menu_feedback_or_suggestion">回饋或建議</string>
     <string name="home_more_menu_about">關於</string>
     <string name="home_more_menu_document">文檔</string>
@@ -621,8 +621,8 @@
     <string name="settings_category_general">一般</string>
     <string name="settings_category_appearance">外觀</string>
     <string name="settings_category_behavior">行為</string>
-    <string name="settings_use_legacy_su_page">單頁超級用戶授權</string>
-    <string name="settings_use_legacy_su_page_summary">超級用戶頁面改用單頁授權設計</string>
+    <string name="settings_use_legacy_su_page">單頁超級使用者授權</string>
+    <string name="settings_use_legacy_su_page_summary">超級使用者頁面使用經典單頁授權設計</string>
     <string name="settings_category_module">模組</string>
     <string name="settings_category_security">安全</string>
     
@@ -636,7 +636,7 @@
     <string name="settings_clear_music">清除音樂</string>
     <string name="settings_clear_music_confirm">確定要清除背景音樂嗎？</string>
     <string name="settings_music_auto_play">自動播放</string>
-    <string name="settings_music_auto_play_summary">應用開啟時自動播放音樂</string>
+    <string name="settings_music_auto_play_summary">應用啟動時自動播放音樂</string>
     <string name="settings_music_looping">循環播放</string>
     <string name="settings_music_looping_summary">循環播放當前歌曲</string>
     <string name="settings_music_volume">音量</string>
